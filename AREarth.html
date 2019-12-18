@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chandan Nagaraj Naik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html#projects-section"><span>P</span>rojects</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<h1 class="mb-3 bread">AREarth</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html#projects-section">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>AREarth <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+		<section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">Data Visualization using Augmented Reality</h2>
+            <p align= "justify" >The goal of this project is to experiment data visualization using Augmented Reality and also talk about the advantages and disadvantages of this technology. 
+              It describes the key problems using the traditional methods to represent data and how it we can overcome it using AR. 
+              Some characteristics of Augmented Reality systems will be discussed and this webpage will provide an overview of them.</p>
+            <p>
+              <img src="images/AREarth_View.png" alt="" class="img-fluid">
+            </p>
+            <p  align= "justify"  >Data visualization is the graphical representation of information and data. Data visualization is a great way to see and understand trends, outliers, and patterns in data. 
+              The traditional forms of visualization include charts, tables, line graphs, column charts, and many other forms, these have of late been supplanted by highly insightful 3D visualizations. 
+              All the visualizations are viewed on a 2D displays. Viewing a three dimensional visualization on a two dimensional platform will not do justice to the 3D visualisations and this way it might be ineffective as well. 
+              Viewing visualization with the help of AR will open up more. The main source of inspiration for this project was <a href ="http://stuffin.space">this.</a></p>
+
+
+            <h2 class="mb-3 mt-5">Approach & Initial Work</h2>
+            <p align= "justify"  >
+              The first step was to learn how to build an AR application. I chose Unity to build an AR application as I have experience building applications using Unity. As a part of leaning I built an ARWatch application
+              which deploys the watch on seeing a specific target. I used Vuforia for target recognition. 
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lDiIZ03BgCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+              Related Links:
+              <a href = "https://youtu.be/lDiIZ03BgCc">ARWatch Demo</a>, <a href=" https://www.linkedin.com/learning/unity-and-vuforia-trying-on-watches-in-augmented-reality/adding-watch-models-to-image-target">ARWatch tutorial</a>, 
+              <a href ="https://github.com/ChandanNaik/ARWatch">ARWatchGitHub</a>, <a href ="https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html">Vuforia documentation</a>,
+            </p>
+
+            <p>
+              <img src="images/AREarthLogo.png" alt="" class="img-fluid">
+            </p>
+            <p>
+              Now that I was able to build a sample AR application, the next task was to be able to build a 3D earth model in AR. It was as simple as
+              <ul>
+                <li align= "justify">Creating a sphere in Unity.</li>
+                <li align= "justify" >Applying the Earth texture to the sphere to make it look realistic (Check related link below).</li>
+                <li align= "justify" >With the help of Vuforia import ARCamera and place the above created model as a child of ARCamera.</li>
+                <li align= "justify" >Now using the Vuforia developed portal, upload the desired image as target and download the database. Import this database in your project.</li>
+                <li align= "justify" >Inside unity scene, place the model above your target image.</li>
+              </ul>
+            </p>
+            <p>
+              Related Links:
+              <a href ="https://www.codeproject.com/Articles/1242369/How-to-create-an-augmented-reality-Earth-in-Unity">Augmented Reality Earth in Unity</a>,
+              <a href ="https://www.itgenerator.com/augmented-reality-app-development/">Create your first AR application with Unity and Vuforia</a>
+            </p>
+
+            <h2 class="mb-3 mt-5">Getting Data</h2>
+            <p align= "justify">
+              It's time to get the data of all the satellite and here are some of the sources 
+              <ul>
+                  <li align= "justify"> <a href="https://www.space-track.org/auth/login">Space-Track</a></li>
+                  <li align= "justify"> <a href="https://celestrak.com">CelesTrak</a></li>
+                  <li align= "justify"> <a href="https://www.amsat.org/keplerian-elements-resources/">AMSAT</a></li>
+                  <li align= "justify"> <a href="https://spaceflight.nasa.gov/home/index.html">NASA Human Space Flight</a></li>
+                </ul>
+
+              The data that we have is a TLE data, TLE stands for Two Line Element. Below image breaks down TLE.
+              <p>
+                  <img src="images/2line.gif" alt="" class="img-fluid">
+                  <img src="images/2line1.png" alt="" class="img-fluid">
+              </p>
+              To get x,y & z points from the dataset there is a python library named <a href ="https://pypi.org/project/sgp4/">SGP4 </a>that breaks it down, I made use of this.
+              <p>
+                   
+                  Related Links:
+                  <a href = "https://www.celestrak.com/NORAD/documentation/tle-fmt.php">Understanding TLE</a>,
+                  <a href = "https://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/SSOP_Help/tle_def.html">TLE breakdown</a>,
+                  <a href = "https://celestrak.com/columns/v02n01/">Orbital Coordinate System</a>,
+                  <a href = "https://rhodesmill.org/skyfield/earth-satellites.html">Reading TLE programmatically</a>,
+                  <a href = "https://stackoverflow.com/questions/3099608/how-do-i-convert-tle-information-to-longitude-latitude-and-altitude-to-display-o">Additional source </a>.
+              </p>
+              
+            </p>
+
+            <h2 class="mb-3 mt-5">Creating Orbital Paths</h2>
+            <p align= "justify">
+              There are no frameworks in unity to plot the data automatically, this has to be done manually. 
+              I built a sample application to create a oribital path(<a href = "https://www.youtube.com/watch?v=lKfqi52PqHk&list=PL5KbKbJ6Gf982bozKUYrX9C4qN_IQYTXZ&index=6">Source</a>).
+              Another useful tutorial was <a href = "https://www.youtube.com/watch?v=P4qREDXRkjE">this</a>. Both these sources helped me understand how to created orbital path. 
+              In ordere to understand more about the particle system in Unity(Update: I ended up not using this int the final version), I was able to follow this and get better understanding of the particle system.
+            </p>
+            <p>
+                Related Links:
+                <a href ="https://www.youtube.com/watch?v=7ZGJlSCcp1c">Data Sphere</a>,
+                <a href ="https://github.com/ChandanNaik/AREarth">Data Sphere GitHub</a>
+              </p>
+
+            <h2 class="mb-3 mt-5">Putting it all together</h2>
+
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oIitF8timZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+
+
+            
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">AR</a>
+                <a href="#" class="tag-cloud-link">Information-visualization</a>
+                <a href="#" class="tag-cloud-link">Unity</a>
+                <a href="#" class="tag-cloud-link">Vuforia</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-4 bg-light">
+              <div class="desc">
+                <h3>Conclusion</h3>
+                <p>Usign AR for information visualisation proves to be effective. But, the technical challanges to build an application is high when compared to the conventional web based information visualisation systems.
+                  This is mainly because of the vast availability of various web frameworks 
+                </p>
+              </div>
+            </div>
+
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            <!-- <div class="sidebar-box ftco-animate">
+            	<h3 class="heading-sidebar">Categories</h3>
+              <ul class="categories">
+                <li><a href="#">Interior Design <span> </span></a></li>
+                <li><a href="#">Exterior Design <span>(22)</span></a></li>
+                <li><a href="#">Industrial Design <span>(37)</span></a></li>
+                <li><a href="#">Landscape Design <span>(42)</span></a></li>
+              </ul>
+            </div> -->
+<!-- 
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Recent Blog</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Tags</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">AR</a>
+                <a href="#" class="tag-cloud-link">Information-visualization</a>
+                <a href="#" class="tag-cloud-link">Unity</a>
+                <a href="#" class="tag-cloud-link">land</a>
+                <a href="#" class="tag-cloud-link">table</a>
+              </div>
+            </div>
+
+            <!-- <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">About</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+  
+          <li class="ftco-animate"><a href="http://linkedin.com/in/chandannagarajnaik/"><span class="icon-linkedin"></span></a></li>
+          <li class="ftco-animate"><a href="http://github.com/ChandanNaik"><span class="icon-github"></span></a></li>
+                  <li class="ftco-animate"><a href="https://twitter.com/ChandanNNaik"><span class="icon-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.facebook.com/chandan.n.naik"><span class="icon-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="http://instagram.com/chandan_n_naik/"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+  
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
